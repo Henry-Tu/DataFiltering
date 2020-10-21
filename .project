@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>DataFiltering</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/wget-first-call</name>
+			<type>2</type>
+			<location>/home/henry/trace viz lab/labs/TraceCompassTutorialTraces/tracing-wget/wget-first-call</location>
+		</link>
+		<link>
+			<name>Traces/wget-first-call/wget-first-call_</name>
+			<type>1</type>
+			<location>/home/henry/.tracecompass/DataFiltering/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>

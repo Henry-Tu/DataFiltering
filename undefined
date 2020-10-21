@@ -1,0 +1,1528 @@
+Crit Path Output
+
+critPath Graph { actors=1, nodes=190 }
+Num Vertices: 190
+Num workers: 1
+Timestamp of head 1602783194127460400
+
+Critical graph data:
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=bash}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194127460400
+Vertex end time: 1602783194127627800
+Time elapsed: 167424
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=bash}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194127627800
+Vertex end time: 1602783194127865600
+Time elapsed: 237824
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=bash}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194127865600
+Vertex end time: 1602783194127886800
+Time elapsed: 21248
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=bash}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194127886800
+Vertex end time: 1602783194128126700
+Time elapsed: 239872
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128126700
+Vertex end time: 1602783194128410600
+Time elapsed: 283904
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128410600
+Vertex end time: 1602783194128428300
+Time elapsed: 17664
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128428300
+Vertex end time: 1602783194128690700
+Time elapsed: 262400
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128690700
+Vertex end time: 1602783194128878000
+Time elapsed: 187392
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128878000
+Vertex end time: 1602783194128891600
+Time elapsed: 13568
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128891600
+Vertex end time: 1602783194128951600
+Time elapsed: 59904
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194128951600
+Vertex end time: 1602783194129204500
+Time elapsed: 252928
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129204500
+Vertex end time: 1602783194129224000
+Time elapsed: 19456
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129224000
+Vertex end time: 1602783194129288700
+Time elapsed: 64768
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129288700
+Vertex end time: 1602783194129546500
+Time elapsed: 257792
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129546500
+Vertex end time: 1602783194129561900
+Time elapsed: 15360
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129561900
+Vertex end time: 1602783194129626600
+Time elapsed: 64768
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129626600
+Vertex end time: 1602783194129880300
+Time elapsed: 253696
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129880300
+Vertex end time: 1602783194129893600
+Time elapsed: 13312
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194129893600
+Vertex end time: 1602783194130432000
+Time elapsed: 538368
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194130432000
+Vertex end time: 1602783194130825700
+Time elapsed: 393728
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194130825700
+Vertex end time: 1602783194130841900
+Time elapsed: 16128
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194130841900
+Vertex end time: 1602783194130901000
+Time elapsed: 59136
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194130901000
+Vertex end time: 1602783194131119600
+Time elapsed: 218624
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194131119600
+Vertex end time: 1602783194131131600
+Time elapsed: 12032
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194131131600
+Vertex end time: 1602783194131675100
+Time elapsed: 543488
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194131675100
+Vertex end time: 1602783194132433700
+Time elapsed: 758528
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132433700
+Vertex end time: 1602783194132452400
+Time elapsed: 18688
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132452400
+Vertex end time: 1602783194132522200
+Time elapsed: 69888
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132522200
+Vertex end time: 1602783194132622300
+Time elapsed: 100096
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132622300
+Vertex end time: 1602783194132636000
+Time elapsed: 13568
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132636000
+Vertex end time: 1602783194132706800
+Time elapsed: 70912
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132706800
+Vertex end time: 1602783194132921600
+Time elapsed: 214784
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132921600
+Vertex end time: 1602783194132934000
+Time elapsed: 12288
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194132934000
+Vertex end time: 1602783194133056000
+Time elapsed: 122112
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133056000
+Vertex end time: 1602783194133202400
+Time elapsed: 146432
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133202400
+Vertex end time: 1602783194133214200
+Time elapsed: 11776
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133214200
+Vertex end time: 1602783194133443800
+Time elapsed: 229632
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133443800
+Vertex end time: 1602783194133457000
+Time elapsed: 13056
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133457000
+Vertex end time: 1602783194133462500
+Time elapsed: 5632
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133462500
+Vertex end time: 1602783194133606100
+Time elapsed: 143616
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133606100
+Vertex end time: 1602783194133619500
+Time elapsed: 13312
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133619500
+Vertex end time: 1602783194133643300
+Time elapsed: 23808
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133643300
+Vertex end time: 1602783194133652700
+Time elapsed: 9472
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133652700
+Vertex end time: 1602783194133654500
+Time elapsed: 1792
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133654500
+Vertex end time: 1602783194133806000
+Time elapsed: 151552
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133806000
+Vertex end time: 1602783194133826800
+Time elapsed: 20736
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133826800
+Vertex end time: 1602783194133858000
+Time elapsed: 31232
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133858000
+Vertex end time: 1602783194133873200
+Time elapsed: 15104
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133873200
+Vertex end time: 1602783194133876000
+Time elapsed: 2816
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194133876000
+Vertex end time: 1602783194134047500
+Time elapsed: 171520
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134047500
+Vertex end time: 1602783194134067000
+Time elapsed: 19456
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134067000
+Vertex end time: 1602783194134093800
+Time elapsed: 26880
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134093800
+Vertex end time: 1602783194134106600
+Time elapsed: 12800
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134106600
+Vertex end time: 1602783194134108700
+Time elapsed: 2048
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134108700
+Vertex end time: 1602783194134307600
+Time elapsed: 198912
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134307600
+Vertex end time: 1602783194134329000
+Time elapsed: 21504
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134329000
+Vertex end time: 1602783194134483000
+Time elapsed: 153856
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134483000
+Vertex end time: 1602783194134767000
+Time elapsed: 284160
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134767000
+Vertex end time: 1602783194134787800
+Time elapsed: 20736
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134787800
+Vertex end time: 1602783194134843400
+Time elapsed: 55552
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194134843400
+Vertex end time: 1602783194135054000
+Time elapsed: 210688
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135054000
+Vertex end time: 1602783194135073000
+Time elapsed: 18944
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135073000
+Vertex end time: 1602783194135125800
+Time elapsed: 52736
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135125800
+Vertex end time: 1602783194135409000
+Time elapsed: 283136
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135409000
+Vertex end time: 1602783194135430400
+Time elapsed: 21504
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135430400
+Vertex end time: 1602783194135539200
+Time elapsed: 108800
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135539200
+Vertex end time: 1602783194135814000
+Time elapsed: 274688
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135814000
+Vertex end time: 1602783194135835100
+Time elapsed: 21248
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194135835100
+Vertex end time: 1602783194136119600
+Time elapsed: 284416
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194136119600
+Vertex end time: 1602783194136319200
+Time elapsed: 199680
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194136319200
+Vertex end time: 1602783194136341000
+Time elapsed: 21760
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194136341000
+Vertex end time: 1602783194136774400
+Time elapsed: 433408
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194136774400
+Vertex end time: 1602783194136927200
+Time elapsed: 152832
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194136927200
+Vertex end time: 1602783194136945400
+Time elapsed: 18176
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194136945400
+Vertex end time: 1602783194137128200
+Time elapsed: 182784
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194137128200
+Vertex end time: 1602783194137453600
+Time elapsed: 325376
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194137453600
+Vertex end time: 1602783194137468200
+Time elapsed: 14592
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194137468200
+Vertex end time: 1602783194137732000
+Time elapsed: 263936
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194137732000
+Vertex end time: 1602783194137891000
+Time elapsed: 158976
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194137891000
+Vertex end time: 1602783194137908000
+Time elapsed: 16896
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194137908000
+Vertex end time: 1602783194138111700
+Time elapsed: 203776
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138111700
+Vertex end time: 1602783194138263300
+Time elapsed: 151552
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138263300
+Vertex end time: 1602783194138280000
+Time elapsed: 16640
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138280000
+Vertex end time: 1602783194138370300
+Time elapsed: 90368
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138370300
+Vertex end time: 1602783194138546200
+Time elapsed: 175872
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138546200
+Vertex end time: 1602783194138559700
+Time elapsed: 13568
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138559700
+Vertex end time: 1602783194138711000
+Time elapsed: 151296
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138711000
+Vertex end time: 1602783194138871000
+Time elapsed: 160000
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138871000
+Vertex end time: 1602783194138875600
+Time elapsed: 4608
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138875600
+Vertex end time: 1602783194138940000
+Time elapsed: 64256
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138940000
+Vertex end time: 1602783194138957800
+Time elapsed: 17920
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138957800
+Vertex end time: 1602783194138963000
+Time elapsed: 5120
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194138963000
+Vertex end time: 1602783194210633500
+Time elapsed: 71670528
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194210633500
+Vertex end time: 1602783194210659000
+Time elapsed: 25600
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194210659000
+Vertex end time: 1602783194210682400
+Time elapsed: 23296
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194210682400
+Vertex end time: 1602783194220132600
+Time elapsed: 9450240
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220132600
+Vertex end time: 1602783194220169200
+Time elapsed: 36608
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220169200
+Vertex end time: 1602783194220293400
+Time elapsed: 124160
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220293400
+Vertex end time: 1602783194220508200
+Time elapsed: 214784
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220508200
+Vertex end time: 1602783194220515800
+Time elapsed: 7680
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220515800
+Vertex end time: 1602783194220637700
+Time elapsed: 121856
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220637700
+Vertex end time: 1602783194220648400
+Time elapsed: 10752
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194220648400
+Vertex end time: 1602783194241003800
+Time elapsed: 20355328
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194241003800
+Vertex end time: 1602783194241026600
+Time elapsed: 22784
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194241026600
+Vertex end time: 1602783194241262600
+Time elapsed: 236032
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194241262600
+Vertex end time: 1602783194241529000
+Time elapsed: 266496
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194241529000
+Vertex end time: 1602783194241537300
+Time elapsed: 8192
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194241537300
+Vertex end time: 1602783194241669400
+Time elapsed: 132096
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194241669400
+Vertex end time: 1602783194242033200
+Time elapsed: 363776
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194242033200
+Vertex end time: 1602783194242038300
+Time elapsed: 5120
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194242038300
+Vertex end time: 1602783194242094800
+Time elapsed: 56576
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194242094800
+Vertex end time: 1602783194242107000
+Time elapsed: 12032
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194242107000
+Vertex end time: 1602783194282349300
+Time elapsed: 40242432
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194282349300
+Vertex end time: 1602783194282390800
+Time elapsed: 41472
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194282390800
+Vertex end time: 1602783194282535400
+Time elapsed: 144640
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194282535400
+Vertex end time: 1602783194282859300
+Time elapsed: 323840
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194282859300
+Vertex end time: 1602783194282890000
+Time elapsed: 30720
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194282890000
+Vertex end time: 1602783194282985700
+Time elapsed: 95744
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194282985700
+Vertex end time: 1602783194283242800
+Time elapsed: 257024
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283242800
+Vertex end time: 1602783194283254800
+Time elapsed: 12032
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283254800
+Vertex end time: 1602783194283262000
+Time elapsed: 7168
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283262000
+Vertex end time: 1602783194283467300
+Time elapsed: 205312
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283467300
+Vertex end time: 1602783194283477000
+Time elapsed: 9728
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283477000
+Vertex end time: 1602783194283542300
+Time elapsed: 65280
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283542300
+Vertex end time: 1602783194283757800
+Time elapsed: 215552
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283757800
+Vertex end time: 1602783194283776800
+Time elapsed: 18944
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283776800
+Vertex end time: 1602783194283893200
+Time elapsed: 116480
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194283893200
+Vertex end time: 1602783194284137000
+Time elapsed: 243712
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194284137000
+Vertex end time: 1602783194284152800
+Time elapsed: 15872
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194284152800
+Vertex end time: 1602783194284351700
+Time elapsed: 198912
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194284351700
+Vertex end time: 1602783194284795600
+Time elapsed: 443904
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194284795600
+Vertex end time: 1602783194284810200
+Time elapsed: 14592
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194284810200
+Vertex end time: 1602783194284859100
+Time elapsed: 48896
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194284859100
+Vertex end time: 1602783194285002800
+Time elapsed: 143616
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194285002800
+Vertex end time: 1602783194285019000
+Time elapsed: 16128
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194285019000
+Vertex end time: 1602783194285342200
+Time elapsed: 323328
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194285342200
+Vertex end time: 1602783194285453300
+Time elapsed: 111104
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194285453300
+Vertex end time: 1602783194306161200
+Time elapsed: 20707840
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194306161200
+Vertex end time: 1602783194306191400
+Time elapsed: 30208
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194306191400
+Vertex end time: 1602783194306263800
+Time elapsed: 72448
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194306263800
+Vertex end time: 1602783194312652500
+Time elapsed: 6388736
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194312652500
+Vertex end time: 1602783194312672500
+Time elapsed: 19968
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194312672500
+Vertex end time: 1602783194312982000
+Time elapsed: 309504
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194312982000
+Vertex end time: 1602783194313271800
+Time elapsed: 289792
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194313271800
+Vertex end time: 1602783194313281500
+Time elapsed: 9728
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194313281500
+Vertex end time: 1602783194313287700
+Time elapsed: 6144
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194313287700
+Vertex end time: 1602783194313907200
+Time elapsed: 619520
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194313907200
+Vertex end time: 1602783194313918000
+Time elapsed: 10752
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194313918000
+Vertex end time: 1602783194313927000
+Time elapsed: 8960
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194313927000
+Vertex end time: 1602783194314536200
+Time elapsed: 609280
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194314536200
+Vertex end time: 1602783194314546200
+Time elapsed: 9984
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194314546200
+Vertex end time: 1602783194314559000
+Time elapsed: 12800
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194314559000
+Vertex end time: 1602783194315154000
+Time elapsed: 594944
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194315154000
+Vertex end time: 1602783194315161000
+Time elapsed: 7168
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194315161000
+Vertex end time: 1602783194315166000
+Time elapsed: 4864
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194315166000
+Vertex end time: 1602783194315796000
+Time elapsed: 630016
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194315796000
+Vertex end time: 1602783194315803600
+Time elapsed: 7680
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194315803600
+Vertex end time: 1602783194315808300
+Time elapsed: 4608
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194315808300
+Vertex end time: 1602783194316421000
+Time elapsed: 612864
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194316421000
+Vertex end time: 1602783194316445400
+Time elapsed: 24320
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194316445400
+Vertex end time: 1602783194316454000
+Time elapsed: 8448
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194316454000
+Vertex end time: 1602783194317708300
+Time elapsed: 1254400
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194317708300
+Vertex end time: 1602783194317719300
+Time elapsed: 11008
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194317719300
+Vertex end time: 1602783194317728300
+Time elapsed: 8960
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194317728300
+Vertex end time: 1602783194328228400
+Time elapsed: 10500096
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194328228400
+Vertex end time: 1602783194328243500
+Time elapsed: 15104
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194328243500
+Vertex end time: 1602783194328261000
+Time elapsed: 17664
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194328261000
+Vertex end time: 1602783194329033200
+Time elapsed: 772096
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329033200
+Vertex end time: 1602783194329062000
+Time elapsed: 28672
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329062000
+Vertex end time: 1602783194329067500
+Time elapsed: 5632
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329067500
+Vertex end time: 1602783194329318000
+Time elapsed: 250368
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329318000
+Vertex end time: 1602783194329326300
+Time elapsed: 8448
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329326300
+Vertex end time: 1602783194329328600
+Time elapsed: 2304
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329328600
+Vertex end time: 1602783194329427700
+Time elapsed: 99072
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329427700
+Vertex end time: 1602783194329435600
+Time elapsed: 7936
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329435600
+Vertex end time: 1602783194329441500
+Time elapsed: 5888
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329441500
+Vertex end time: 1602783194329512400
+Time elapsed: 70912
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329512400
+Vertex end time: 1602783194329514000
+Time elapsed: 1536
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329514000
+Vertex end time: 1602783194329519600
+Time elapsed: 5632
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329519600
+Vertex end time: 1602783194329559600
+Time elapsed: 39936
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329559600
+Vertex end time: 1602783194329563400
+Time elapsed: 3840
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329563400
+Vertex end time: 1602783194329567200
+Time elapsed: 3840
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329567200
+Vertex end time: 1602783194329613600
+Time elapsed: 46336
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329613600
+Vertex end time: 1602783194329618200
+Time elapsed: 4608
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329618200
+Vertex end time: 1602783194329641700
+Time elapsed: 23552
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329641700
+Vertex end time: 1602783194329653500
+Time elapsed: 11776
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194329653500
+Vertex end time: 1602783194330245000
+Time elapsed: 591616
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194330245000
+Vertex end time: 1602783194330297900
+Time elapsed: 52736
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194330297900
+Vertex end time: 1602783194330306300
+Time elapsed: 8448
+
+Worker of Vertex: wget
+Worker info: {TID=133873, Priority=20, Exec_Name=wget}
+Status: WAIT_BLOCKED
+Old status: EXIT
+Vertex start time: 1602783194330306300
+End of Crit Path
+
