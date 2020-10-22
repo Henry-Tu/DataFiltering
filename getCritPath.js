@@ -10,7 +10,8 @@ tid = "";
 var file = createFile("workspace://DataFiltering/output.txt");
 var fileHandle = writeLine(file, "Crit Path Output");
 writeLine(fileHandle,"");
-
+var outputStrs = [];
+outputStrs[0] = "";
 
 filterCritPath(time1, time2, tid);
 
@@ -68,12 +69,13 @@ function filterGraph(next,critPath, time1, time2, tid){
 	edges =	org.eclipse.tracecompass.analysis.graph.core.base.TmfVertex.EdgeDirection.values();
 	//Get the Enum of the statuses
 	statuses = org.eclipse.tracecompass.analysis.os.linux.core.model.ProcessStatus.values();
-	
+	counter = 0;
 	//Loop for all nodes in graph
 	while(next != null){
+		
 		vertex = next;
 		vertical = false;
-		outputStr = "";
+		
 		
 		//Find next vertex
 		if(vertex.getEdge(edges[0]) != null){
@@ -91,6 +93,8 @@ function filterGraph(next,critPath, time1, time2, tid){
 		
 		//check if this node is within filter
 		if((sTime >= time1) && (sTime <= time2)){
+			counter ++;
+			outputStrs[counter] = "";
 			//Get data of vertex and node
 			worker = critPath.getParentOf(vertex);
 			name = worker.getName();
@@ -100,21 +104,21 @@ function filterGraph(next,critPath, time1, time2, tid){
 			prevStatus = worker.getOldStatus();
 	
 			//output data
-			outputStr += "Worker of Vertex: " + name + "\nWorker info: " + info + "\nStatus: " + status + "\nOld status: " + prevStatus + "Vertex start time: " + sTime;
+			outputStrs[counter] += "Worker of Vertex: " + name + "\nWorker info: " + info + "\nStatus: " + status + "\nOld status: " + prevStatus + "Vertex start time: " + sTime;
 			if(next != null){
 				eTime = next.getTs()-1;
 				elapsed = eTime - sTime;
-				
-				outputStr += "\nVertex end time: " + eTime + "\nTime elapsed: " + elapsed;
+				outputStrs[counter] += "\nVertex end time: " + eTime + "\nTime elapsed: " + elapsed;
 				if(vertical){
-					outputStr += "\nSwitch to different worker";
+					outputStrs[counter] += "\nSwitch to different worker";
 				}
 			}
 		}
 		if(next == null){
-			outputStr += "\nEnd of Crit Path";
+			outputStr[counter] += "\nEnd of Crit Path";
 		}
-		writeLine(fileHandle, outputStr + "\n");
+		outputStrs[counter] += "\n";
+		//writeLine(fileHandle, outputStr + "\n");
 	}
 }
 
@@ -137,6 +141,10 @@ function filterCritPath(time1, time2, tid){
 	writeLine(fileHandle,outputStr);
 	
 	filterGraph(next, critPath, time1, time2, tid);
+	print("Outputting");
+	for ( i = 0; i < outputStrs.length; i++){
+		writeLine(fileHandle, outputStrs[i]);
+	}
 	print("Complete");
 }
 
