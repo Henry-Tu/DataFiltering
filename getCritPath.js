@@ -1,10 +1,13 @@
 loadModule("/TraceCompass/Trace");
 loadModule('/TraceCompass/Analysis');
 loadModule('/System/Resources');
+loadModule('/TraceCompass/View');
 
 var time1 = 0;
 var time2 = 99999999999999999999;
 tid = "";
+
+
 
 // For output
 var file = createFile("workspace://DataFiltering/output.txt");
@@ -87,6 +90,9 @@ function filterGraph(next,critPath, time1, time2, tid){
 			next = vertex. getNeighborFromEdge(edge, edges[2]);
 		}else{
 			next = null;
+		}
+		if((vertex.getEdge(edges[0]) != null) && (vertex.getEdge(edges[2]) != null)){
+			print("Two edges");
 		}
 		
 		sTime = vertex.getTs();
