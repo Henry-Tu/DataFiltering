@@ -10,7 +10,8 @@ tid = "";
 
 filterOsExecutionGraph(time1, time2, tid);
 
-function filterGraph(next, graph, time1, time2, tid){
+
+function filterGraph(next, graph, ss, time1, time2, tid){
 	//Get the ENUM of the edge directions
 	edges =	org.eclipse.tracecompass.analysis.graph.core.base.TmfVertex.EdgeDirection.values();
 	//Get the Enum of the statuses
@@ -50,6 +51,8 @@ function filterGraph(next, graph, time1, time2, tid){
 			//info = worker.getWorkerInformation(sTime);
 			tid = worker.getHostId();
 			id = vertex.getID();
+			
+			
 			
 			//statusNum = worker.getStatus().getStateValue().unboxInt();
 			//status = statuses[statusNum];
@@ -144,6 +147,8 @@ function filterOsExecutionGraph(time1, time2, tid){
 	      print("Statistics analysis not found");
 	      exit();
 	}
+	//get state system
+	ss = createScriptedAnalysis(trace, "FilterExecutionGraph.js").getStateSystem(false);
 	var graph = analysis.getGraph();
 	
 	if(graph == null){
@@ -159,7 +164,7 @@ function filterOsExecutionGraph(time1, time2, tid){
 	head = graph.getHead();
 	next = head;
 	
-	filterGraph(next, graph,time1, time2, tid);
+	filterGraph(next, graph, ss, time1, time2, tid);
 
 }
 
