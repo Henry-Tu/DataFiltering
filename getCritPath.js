@@ -2,8 +2,8 @@ loadModule("/TraceCompass/Trace");
 loadModule('/TraceCompass/Analysis');
 loadModule('/System/Resources');
 
-var time1 = 1702814325617176600;
-var time2 = 2002814325617176600;
+var time1 = 0;
+var time2 = 99999999999999999999;
 tid = "";
 
 // For output
@@ -69,6 +69,7 @@ function filterGraph(next,critPath, time1, time2, tid){
 	//Get the Enum of the statuses
 	statuses = org.eclipse.tracecompass.analysis.os.linux.core.model.ProcessStatus.values();
 	
+	//Loop for all nodes in graph
 	while(next != null){
 		vertex = next;
 		vertical = false;
@@ -85,7 +86,10 @@ function filterGraph(next,critPath, time1, time2, tid){
 		}else{
 			next = null;
 		}
+		
 		sTime = vertex.getTs();
+		
+		//check if this node is within filter
 		if((sTime >= time1) && (sTime <= time2)){
 			//Get data of vertex and node
 			worker = critPath.getParentOf(vertex);
@@ -119,6 +123,10 @@ function filterCritPath(time1, time2, tid){
 	trace = getTrace();
 	analysis = getCritAnalysis(trace);
 	let critPath = analysis.getCriticalPath();
+	if(critPath == null){
+		print("Critical path not found");
+	     exit();
+	}
 	var workers = critPath.getWorkers();
 	
 	//get head of graph
