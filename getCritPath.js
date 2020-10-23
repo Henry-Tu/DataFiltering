@@ -5,7 +5,7 @@ loadModule('/TraceCompass/View');
 
 //Filter values
 const time1 = 0;                            //start time
-const time2 = 99999999999999999999;         //end time
+const time2 = 999999999999999999;          //end time
 const filterTid = -1;                     //tid: -1 if not in use
 const filterStatus = "none";                  //status: none if not in use
 const saveLocation = "workspace://DataFiltering/output.txt";
