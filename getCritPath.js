@@ -3,20 +3,44 @@ loadModule('/TraceCompass/Analysis');
 loadModule('/System/Resources');
 loadModule('/TraceCompass/View');
 
-var time1 = 0;
-var time2 = 99999999999999999999;
-tid = "";
+//Filter values
+const time1 = 0;                            //start time
+const time2 = 99999999999999999999;         //end time
+const filterTid = -1;                     //tid: -1 if not in use
+const filterStatus = "none";                  //status: none if not in use
+const saveLocation = "workspace://DataFiltering/output.txt";
+
+/* 
+Possible statuses:
+
+	BLOCK_DEVICE
+	BLOCKED
+	DEFAULT
+	EPS
+	INTERRUPTED
+	IPI
+	NETWORK
+	PREEMPTED
+	RUNNING
+	TIMER
+	UNKNOWN
+	USER_INPUT
+See: 
+https://archive.eclipse.org/tracecompass/doc/javadoc/apidocs/org/eclipse/tracecompass/analysis/graph/core/base/TmfEdge.EdgeType.html
+for details
+*/
+
 
 
 
 // For output
-var file = createFile("workspace://DataFiltering/output.txt");
+var file = createFile(saveLocation);
 var fileHandle = writeLine(file, "Crit Path Output");
 writeLine(fileHandle,"");
 var outputStrs = [];
 outputStrs[0] = "";
 
-filterCritPath(time1, time2, tid);
+filterCritPath(time1, time2, filterTid, filterStatus);
 
 
 // Get the currently active trace
@@ -41,76 +65,56 @@ function getCritAnalysis(trace){
 	return analysis;
 }
 
-/*
-iter = workers.iterator();
-
-while(iter.hasNext()){
-	worker = iter.next();
-	name = worker.getName();
-	writeLine(fileHandle, "Worker name: " + name);
-	start = worker.getStart()
-	writeLine(fileHandle, "Start: " + start);
-	info = worker.getWorkerInformation()
-	writeLine(fileHandle, "Worker info: " + info);
-	writeLine(fileHandle, "Host id: " + worker.getHostId());
-	hostThread = worker.getHostThread();
-	writeLine(fileHandle, hostThread);
-	writeLine(fileHandle, "");
-}
-*/
-
-
-
-
 
 /*
 	traverse through the nodes of the graph
 	
 */
-function filterGraph(next,critPath, time1, time2, tid){
+function filterGraph(next,critPath, time1, time2, filterTid, status){
 	//Get the ENUM of the edge directions
 	edges =	org.eclipse.tracecompass.analysis.graph.core.base.TmfVertex.EdgeDirection.values();
-	//Get the Enum of the statuses
-	statuses = org.eclipse.tracecompass.analysis.os.linux.core.model.ProcessStatus.values();
 	counter = 0;
 	//Loop for all nodes in graph
 	while(next != null){
 		
 		vertex = next;
 		vertical = false;
-		
+		type = null;
+		within = true;   //If the node is within the filters
 		
 		//Find next vertex
 		if(vertex.getEdge(edges[0]) != null){
 			edge = vertex.getEdge(edges[0]);
+			type = edge.getType();
 			next = vertex. getNeighborFromEdge(edge, edges[0]);
 			vertical = true;
 		}else if (vertex.getEdge(edges[2]) != null){
 			edge = vertex.getEdge(edges[2]);
+			type = edge.getType();
 			next = vertex. getNeighborFromEdge(edge, edges[2]);
 		}else{
 			next = null;
 		}
-		if((vertex.getEdge(edges[0]) != null) && (vertex.getEdge(edges[2]) != null)){
-			print("Two edges");
-		}
-		
+
+		//Get data of vertex and node
+		worker = critPath.getParentOf(vertex);
+		name = worker.getName();
 		sTime = vertex.getTs();
+		info = worker.getWorkerInformation(sTime);
+		tid = info.get('TID');
+		
 		
 		//check if this node is within filter
-		if((sTime >= time1) && (sTime <= time2)){
+		if(!((sTime >= time1) && (sTime <= time2)) || ((status != "none") && (status != type)) || ((filterTid != -1) && (filterTid != tid) )){
+			within = false;
+		}
+		
+		if(within){
 			counter ++;
-			outputStrs[counter] = "";
-			//Get data of vertex and node
-			worker = critPath.getParentOf(vertex);
-			name = worker.getName();
-			info = worker.getWorkerInformation(sTime);
-			statusNum = worker.getStatus().getStateValue().unboxInt();
-			status = statuses[statusNum];
-			prevStatus = worker.getOldStatus();
-	
 			//output data
-			outputStrs[counter] += "Worker of Vertex: " + name + "\nWorker info: " + info + "\nStatus: " + status + "\nOld status: " + prevStatus + "Vertex start time: " + sTime;
+			outputStrs[counter] = "";
+			outputStrs[counter] += "Worker of Vertex: " + name + "\nWorker info: " + info  + "\nStatus: " + type + "\nVertex start time: " + sTime;
+			
 			if(next != null){
 				eTime = next.getTs()-1;
 				elapsed = eTime - sTime;
@@ -119,16 +123,19 @@ function filterGraph(next,critPath, time1, time2, tid){
 					outputStrs[counter] += "\nSwitch to different worker";
 				}
 			}
+			outputStrs[counter] += "\n";
 		}
-		if(next == null){
-			outputStr[counter] += "\nEnd of Crit Path";
-		}
-		outputStrs[counter] += "\n";
-		//writeLine(fileHandle, outputStr + "\n");
+		
+	}	
+		
+	if(next == null){
+		outputStr[counter] += "\nEnd of Crit Path";
 	}
+	outputStrs[counter] += "\n";
+	//writeLine(fileHandle, outputStr + "\n");
 }
 
-function filterCritPath(time1, time2, tid){
+function filterCritPath(time1, time2, filterTid, filterStatus){
 	
 	trace = getTrace();
 	analysis = getCritAnalysis(trace);
@@ -146,8 +153,8 @@ function filterCritPath(time1, time2, tid){
 	outputStr= "critPath " + critPath + "\nNum Vertices: " + critPath.size() + "\nNum workers: " + workers.size() + "\nTimestamp of head " + head.getTs() + "\n\nCritical graph data:\n";
 	writeLine(fileHandle,outputStr);
 	
-	filterGraph(next, critPath, time1, time2, tid);
-	print("Outputting");
+	filterGraph(next, critPath, time1, time2, filterTid, filterStatus);
+	print("Outputting to \"" + saveLocation + "\" ");
 	for ( i = 0; i < outputStrs.length; i++){
 		writeLine(fileHandle, outputStrs[i]);
 	}
