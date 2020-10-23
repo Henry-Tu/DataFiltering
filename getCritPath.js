@@ -105,7 +105,7 @@ function filterGraph(next,critPath, time1, time2, filterTid, status){
 		
 		
 		//check if this node is within filter
-		if(!((sTime >= time1) && (sTime <= time2)) || ((status != "none") && (status != type)) || ((filterTid != -1) && (filterTid != tid) )){
+		if(!((sTime >= time1) && (sTime <= time2)) || ((status != "none") && (status != type)) || ((filterTid != -1) && (filterTid != tid) ) || (next== null)){
 			within = false;
 		}
 		
