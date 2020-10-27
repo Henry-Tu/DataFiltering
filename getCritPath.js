@@ -5,7 +5,7 @@ loadModule('/TraceCompass/View');
 
 //Filter values
 const time1 = 0;                            //start time
-const time2 = 1602814327606576000;          //end time
+const time2 = 9999999999999999999999;          //end time
 const filterTid = -1;                     //tid: -1 if not in use
 const filterStatus = "none";                  //status: none if not in use
 const saveLocation = "workspace://DataFiltering/output.txt";
@@ -170,27 +170,27 @@ function filterCritPath(time1, time2, filterTid, filterStatus){
 function addChar(status){
 	if(status == "BLOCK_DEVICE"){
 		charOutput += 'A';
-	}else if(status = "BLOCKED"){
+	}else if(status == "BLOCKED"){
 		charOutput += 'B';
-	}else if(status = "DEFAULT"){
+	}else if(status == "DEFAULT"){
 		charOutput += 'C';
-	}else if(status = "EPS"){
+	}else if(status == "EPS"){
 		charOutput += 'D';
-	}else if(status = "INTERRUPTED"){
+	}else if(status == "INTERRUPTED"){
 		charOutput += 'E';
-	}else if(status = "IPI"){
+	}else if(status == "IPI"){
 		charOutput += 'F';
-	}else if(status = "NETWORK"){
+	}else if(status =="NETWORK"){
 		charOutput += 'G';
-	}else if(status = "PREEMPTED"){
+	}else if(status == "PREEMPTED"){
 		charOutput += 'H';
-	}else if(status = "RUNNING"){
+	}else if(status == "RUNNING"){
 		charOutput += 'I';
-	}else if(status = "TIMER"){
+	}else if(status == "TIMER"){
 		charOutput += 'J';
-	}else if(status = "UNKNOWN"){
+	}else if(status == "UNKNOWN"){
 		charOutput += 'K';
-	}else if(status = "USER_INPUT"){
+	}else if(status == "USER_INPUT"){
 		charOutput += 'L';
 	}else{
 	charOutput += 'Z';
