@@ -5,7 +5,7 @@ loadModule('/TraceCompass/View');
 
 //Filter values
 const time1 = 0;                            //start time
-const time2 = 999999999999999999;          //end time
+const time2 = 1602814327606576000;          //end time
 const filterTid = -1;                     //tid: -1 if not in use
 const filterStatus = "none";                  //status: none if not in use
 const saveLocation = "workspace://DataFiltering/output.txt";
@@ -13,18 +13,18 @@ const saveLocation = "workspace://DataFiltering/output.txt";
 /* 
 Possible statuses:
 
-	BLOCK_DEVICE
-	BLOCKED
-	DEFAULT
-	EPS
-	INTERRUPTED
-	IPI
-	NETWORK
-	PREEMPTED
-	RUNNING
-	TIMER
-	UNKNOWN
-	USER_INPUT
+	BLOCK_DEVICE	//A
+	BLOCKED			//B
+	DEFAULT			//C
+	EPS				//D
+	INTERRUPTED		//E
+	IPI				//F
+	NETWORK			//G
+	PREEMPTED		//H
+	RUNNING			//I
+	TIMER			//J
+	UNKNOWN			//K
+	USER_INPUT		//L
 See: 
 https://archive.eclipse.org/tracecompass/doc/javadoc/apidocs/org/eclipse/tracecompass/analysis/graph/core/base/TmfEdge.EdgeType.html
 for details
@@ -39,6 +39,7 @@ var fileHandle = writeLine(file, "Crit Path Output");
 writeLine(fileHandle,"");
 var outputStrs = [];
 outputStrs[0] = "";
+var charOutput = "";
 
 filterCritPath(time1, time2, filterTid, filterStatus);
 
@@ -67,7 +68,7 @@ function getCritAnalysis(trace){
 
 
 /*
-	traverse through the nodes of the graph
+	Traverse through the nodes of the graph
 	
 */
 function filterGraph(next,critPath, time1, time2, filterTid, status){
@@ -86,7 +87,7 @@ function filterGraph(next,critPath, time1, time2, filterTid, status){
 		if(vertex.getEdge(edges[0]) != null){
 			edge = vertex.getEdge(edges[0]);
 			type = edge.getType();
-			next = vertex. getNeighborFromEdge(edge, edges[0]);
+			next = vertex.getNeighborFromEdge(edge, edges[0]);
 			vertical = true;
 		}else if (vertex.getEdge(edges[2]) != null){
 			edge = vertex.getEdge(edges[2]);
@@ -116,14 +117,15 @@ function filterGraph(next,critPath, time1, time2, filterTid, status){
 			outputStrs[counter] += "Worker of Vertex: " + name + "\nWorker info: " + info  + "\nStatus: " + type + "\nVertex start time: " + sTime;
 			
 			if(next != null){
-				eTime = next.getTs()-1;
+				eTime = next.getTs();
 				elapsed = eTime - sTime;
 				outputStrs[counter] += "\nVertex end time: " + eTime + "\nTime elapsed: " + elapsed;
 				if(vertical){
-					outputStrs[counter] += "\nSwitch to different worker";
+					outputStrs[counter] += "\nSwitching to different worker";
 				}
 			}
 			outputStrs[counter] += "\n";
+			addChar(type.toString());
 		}
 		
 	}	
@@ -158,7 +160,40 @@ function filterCritPath(time1, time2, filterTid, filterStatus){
 	for ( i = 0; i < outputStrs.length; i++){
 		writeLine(fileHandle, outputStrs[i]);
 	}
+	writeLine(fileHandle,"String representation: \n" + charOutput);
 	print("Complete");
 }
 
+/**
+*
+**/
+function addChar(status){
+	if(status == "BLOCK_DEVICE"){
+		charOutput += 'A';
+	}else if(status = "BLOCKED"){
+		charOutput += 'B';
+	}else if(status = "DEFAULT"){
+		charOutput += 'C';
+	}else if(status = "EPS"){
+		charOutput += 'D';
+	}else if(status = "INTERRUPTED"){
+		charOutput += 'E';
+	}else if(status = "IPI"){
+		charOutput += 'F';
+	}else if(status = "NETWORK"){
+		charOutput += 'G';
+	}else if(status = "PREEMPTED"){
+		charOutput += 'H';
+	}else if(status = "RUNNING"){
+		charOutput += 'I';
+	}else if(status = "TIMER"){
+		charOutput += 'J';
+	}else if(status = "UNKNOWN"){
+		charOutput += 'K';
+	}else if(status = "USER_INPUT"){
+		charOutput += 'L';
+	}else{
+	charOutput += 'Z';
+	}
+}
 
