@@ -50,80 +50,86 @@ var scriptedAnalysis = createScriptedAnalysis(trace, "FilterExecutionGraph.js");
 var ss = scriptedAnalysis.getStateSystem(false);
 var tgEntries = createListWrapper();
 var tgArrows = createListWrapper();
+var vertices = [];
 var pendingArrows = [];
+var vidToEntry = [];
 module = new org.eclipse.tracecompass.incubator.scripting.core.data.provider.DataProviderScriptingModule();
 var mapEntryToVid = [];
+var quark = null;
 
 //loop for all workers
 while(iter.hasNext()){
 	worker = iter.next();
 	next = graph.getHead(worker);
-	
+	vid = next.getID();
+	sTime = next.getTs();
 	//loop for all vertices of a worker
 	while(next != null){
 		vertex = next;
+		vid = vertex.getID();
+		sTime = vertex.getTs();
+	
+		//save vertex;
+		vertices.push({"vid" : vid, "sTime": sTime});
 		edge = vertex.getEdge(edges[2]);
+		name = worker.getName();
+		quark = ss.getQuarkAbsoluteAndAdd(name);
 		
 		if(edge != null){
-			name = worker.getName();
+			
 			next = edge.getVertexTo();
 			status = edge.getType();
-			vid = vertex.getID();
-			sTime = vertex.getTs();
+			
 			eTime = next.getTs();
 			if(eTime > graphEndTime){
 				graphEndTime = eTime;
 			} 
 			
-			quark = ss.getQuarkAbsoluteAndAdd(name);
 			ss.modifyAttribute(sTime, status.toString(), quark);
 			ss.removeAttribute(eTime, quark);
-			entry = createEntry(name, {'quark' : quark});
-			tgEntries.getList().add(entry);
 			
-			//save entry incase it is needed later to create an arrow
-			entryId = entry.getId();
-			mapEntryToVid[vid] = {"entryId" : entryId, "time" : sTime};
 			
 			//if there is an vertical edge, make an arrow
 			vertEdge = vertex.getEdge(edges[0]);
 			if (vertEdge != null){
+				//add this vertex to the list of new arrows
 				vert = vertEdge.getVertexTo();
 				destVid = vert.getID();
-				
-				//if the dest entry id has yet to be saved, save data of this vertex
-				destEntry = mapEntryToVid[destVid]
-				if(destEntry == null){
-					pendingArrows[destVid] = {"sTime" : sTime, "source" : entryId, "destVid" : destVid}
-				}else{
-					//the dest entry id has already been stored
-					eTime = destEntry["time"];
-					duration = eTime - sTime;
-					source = entryId;
-					dest = destEntry["entryId"];
-					tgArrows.getList().add(module.createArrow(source, dest, sTime, duration, 1));
-				}
+				pendingArrows.push({"source" : vid, "dest": destVid});
 			}
-			//If this is a dest for an arrow
-			pArrow = pendingArrows[vid];
-			if(pArrow != null){
-				pendingArrows[vid] = null;
-				eTime = sTime;
-				sTime = pArrow["sTime"];
-				source = pArrow["source"];
-				dest = entryId;
-				duration = eTime - sTime;
-				tgArrows.getList().add(module.createArrow(source, dest, sTime, duration, 1));
-			}
+			
 		}else{
 			next = null;
 		}
+		
 	}
-	
-	
+	entry = createEntry(name, {'quark' : quark});
+	tgEntries.getList().add(entry);
+	entryId = entry.getId();
+	vertex = vertices.pop();
+	while(vertex != null){
+		vidToEntry[vertex["vid"]] = {"sTime": vertex["sTime"], "entryId": entryId};
+		vertex = vertices.pop();
+	}
 }
 
 ss.closeHistory(graphEndTime);
+
+//create the arrows
+
+data = pendingArrows.pop();
+while(data != null){
+	sourceVid = data["source"];
+	destVid = data["dest"];
+	sourceV = vidToEntry[sourceVid];
+	destV = vidToEntry[destVid];
+	source = sourceV["entryId"];
+	sTime = sourceV["sTime"];
+	dest = destV["entryId"];
+	duration = destV["time"] - sTime;
+	tgArrows.getList().add(module.createArrow(source, dest, sTime, duration, 1));
+	data = pendingArrows.pop();
+}
 
 
 // A function used to return the entries to the data provider.
