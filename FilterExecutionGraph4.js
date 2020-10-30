@@ -1,14 +1,14 @@
 loadModule("/TraceCompass/Trace");
 loadModule('/TraceCompass/Analysis');
-loadModule("/TraceCompass/DataProvider")
-loadModule("/TraceCompass/View")
+loadModule("/TraceCompass/DataProvider");
+loadModule("/TraceCompass/View");
 loadModule("/TraceCompass/Utils");
 
-/*
-Entreis receive the name (which is stored as the quark attribute) instead of the worker id. Creating arrows requires the worker id. 
-
-
-*/
+//Filter values
+ time1 = 0;                            //start time
+ time2 = 9999999999999999999999;          //end time
+ filterTid = -1;                     //tid: -1 if not in use
+ filterStatus = "none";                  //status: none if not in use
 
 var graphEndTime = 0;
 
@@ -65,9 +65,12 @@ while(iter.hasNext()){
 	sTime = next.getTs();
 	//loop for all vertices of a worker
 	while(next != null){
+		within = true;
 		vertex = next;
 		vid = vertex.getID();
 		sTime = vertex.getTs();
+		info = worker.getWorkerInformation(sTime);
+		tid = info.get('TID');
 	
 		//save vertex;
 		vertices.push({"vid" : vid, "sTime": sTime});
@@ -85,9 +88,14 @@ while(iter.hasNext()){
 				graphEndTime = eTime;
 			} 
 			
-			ss.modifyAttribute(sTime, status.toString(), quark);
-			ss.removeAttribute(eTime, quark);
-			
+			//check if this node is within filter
+			if(!((sTime >= time1) && (sTime <= time2)) || ((filterStatus != "none") && (filterStatus != status)) || ((filterTid != -1) && (filterTid != tid) ) || (next== null)){
+				within = false;
+			}
+			if(within){
+				ss.modifyAttribute(sTime, status.toString(), quark);
+				ss.removeAttribute(eTime, quark);
+			}
 			
 			//if there is an vertical edge, make an arrow
 			vertEdge = vertex.getEdge(edges[0]);
@@ -126,7 +134,7 @@ while(data != null){
 	source = sourceV["entryId"];
 	sTime = sourceV["sTime"];
 	dest = destV["entryId"];
-	duration = destV["time"] - sTime;
+	duration = destV["sTime"] - sTime;
 	tgArrows.getList().add(module.createArrow(source, dest, sTime, duration, 1));
 	data = pendingArrows.pop();
 }
