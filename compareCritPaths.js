@@ -3,6 +3,48 @@ loadModule('/TraceCompass/Analysis');
 loadModule('/System/Resources');
 loadModule('/TraceCompass/View');
 loadModule('/TraceCompass/TraceUI');
+jaro_winkler = {};
+jaro_winkler.adjustments = {
+  'A': 'E',
+  'A': 'I',
+  'A': 'O',
+  'A': 'U',
+  'B': 'V',
+  'E': 'I',
+  'E': 'O',
+  'E': 'U',
+  'I': 'O',
+  'I': 'U',
+  'O': 'U',
+  'I': 'Y',
+  'E': 'Y',
+  'C': 'G',
+  'E': 'F',
+  'W': 'U',
+  'W': 'V',
+  'X': 'K',
+  'S': 'Z',
+  'X': 'S',
+  'Q': 'C',
+  'U': 'V',
+  'M': 'N',
+  'L': 'I',
+  'Q': 'O',
+  'P': 'R',
+  'I': 'J',
+  '2': 'Z',
+  '5': 'S',
+  '8': 'B',
+  '1': 'I',
+  '1': 'L',
+  '0': 'O',
+  '0': 'Q',
+  'C': 'K',
+  'G': 'J',
+  'E': ' ',
+  'Y': ' ', 
+  'S': ' '
+}
 
 //Filter values
  time1 = 0;                            //start time
@@ -14,7 +56,9 @@ loadModule('/TraceCompass/TraceUI');
 //The thread you want to compare
 var followName = "wget";
 //number of traces
-numTraces = 3;
+numTraces = 5;
+//Output save location
+saveLocation = "workspace://DataFiltering/output.txt";
 
 /* 
 Possible statuses:
@@ -68,8 +112,19 @@ for(x = 0; x <numTraces; x ++){
 	for ( y = 0; y < numTraces; y++){
 		if( x != y ){
 			yString = critPathStrings[y];
-			similarity = textCosineSimilarity(xString, yString);
-			print((x+1) + " is " + similarity + " similar to " + (y+1));
+			similarity = textCosineSimilarity(xString, yString) * 100;
+			similarity = similarity.toFixed(2);
+			outputCompar = "Trace " + (x+1) + " and Trace " + (y+1) + "\nCosine Algorithm: " + similarity + "% similar";
+			//If it is above threshold
+			if(similarity >= simThreshold){
+				thisGroup.push(y+1);
+			}
+			if( y>x ){
+				outputCompar += "\nJaro Winkler: " + (jaroWinkler(xString,yString) * 100).toFixed(2) +"%";
+				outputCompar += "\nLevenshtein distance: " + levenshtein(xString, yString);
+				print(outputCompar);
+				writeLine(fileHandle, outputCompar);
+			}
 		}
 	}
 }
@@ -326,3 +381,145 @@ function addKeysToDict(map, dict) {
 
         return cosineSimilarity(termFreqVecA, termFreqVecB);
     }
+    
+    
+    
+    
+//Levenshtein Algorithm 
+//Source: https://coderwall.com/p/uop8jw/fast-and-working-levenshtein-algorithm-in-javascript
+    
+function levenshtein(a, b) {
+  if(a.length === 0) return b.length;
+  if(b.length === 0) return a.length;
+
+  var matrix = [];
+
+  // increment along the first column of each row
+  var i;
+  for(i = 0; i <= b.length; i++){
+    matrix[i] = [i];
+  }
+
+  // increment each column in the first row
+  var j;
+  for(j = 0; j <= a.length; j++){
+    matrix[0][j] = j;
+  }
+
+  // Fill in the rest of the matrix
+  for(i = 1; i <= b.length; i++){
+    for(j = 1; j <= a.length; j++){
+      if(b.charAt(i-1) == a.charAt(j-1)){
+        matrix[i][j] = matrix[i-1][j-1];
+      } else {
+        matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, // substitution
+                                Math.min(matrix[i][j-1] + 1, // insertion
+                                         matrix[i-1][j] + 1)); // deletion
+      }
+    }
+  }
+
+  return matrix[b.length][a.length];
+}
+
+//Jaro Winkler algorithm
+//Source: https://github.com/thsig/jaro-winkler-JS/blob/master/jaro_winkler.js
+
+function jaroWinkler(a, b) {
+	
+  
+  if (!a || !b) { return 0.0; }
+
+  a = a.trim().toUpperCase();
+  b = b.trim().toUpperCase();
+  var a_len = a.length;
+  var b_len = b.length;
+  var a_flag = []; var b_flag = [];
+  var search_range = Math.floor(Math.max(a_len, b_len) / 2) - 1;
+  var minv = Math.min(a_len, b_len);
+
+  // Looking only within the search range, count and flag the matched pairs. 
+  var Num_com = 0;
+  var yl1 = b_len - 1;
+  for (var i = 0; i < a_len; i++) {
+    var lowlim = (i >= search_range) ? i - search_range : 0;
+    var hilim  = ((i + search_range) <= yl1) ? (i + search_range) : yl1;
+    for (var j = lowlim; j <= hilim; j++) {
+      if (b_flag[j] !== 1 && a[j] === b[i]) {
+        a_flag[j] = 1;
+        b_flag[i] = 1;
+        Num_com++;
+        break;
+      }
+    }
+  }
+
+  // Return if no characters in common
+  if (Num_com === 0) { return 0.0; }
+
+  // Count the number of transpositions
+  var k = 0; var N_trans = 0;
+  for (var i = 0; i < a_len; i++) {
+    if (a_flag[i] === 1) {
+      var j;
+      for (j = k; j < b_len; j++) {
+        if (b_flag[j] === 1) {
+          k = j + 1;
+          break;
+        }
+      }
+      if (a[i] !== b[j]) { N_trans++; }
+    }
+  }
+  N_trans = Math.floor(N_trans / 2);
+
+  // Adjust for similarities in nonmatched characters
+  var N_simi = 0; var adjwt = jaro_winkler.adjustments;
+  if (minv > Num_com) {
+    for (var i = 0; i < a_len; i++) {
+      if (!a_flag[i]) {
+        for (var j = 0; j < b_len; j++) {
+          if (!b_flag[j]) {
+            if (adjwt[a[i]] === b[j]) {
+              N_simi += 3;
+              b_flag[j] = 2;
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  var Num_sim = (N_simi / 10.0) + Num_com;
+
+  // Main weight computation
+  var weight = Num_sim / a_len + Num_sim / b_len + (Num_com - N_trans) / Num_com;
+  weight = weight / 3;
+
+  // Continue to boost the weight if the strings are similar
+  if (weight > 0.7) {
+    // Adjust for having up to the first 4 characters in common
+    var j = (minv >= 4) ? 4 : minv;
+    var i;
+    for (i = 0; (i < j) && a[i] === b[i]; i++) { }
+    if (i) { weight += i * 0.1 * (1.0 - weight) };
+
+    // Adjust for long strings.
+    // After agreeing beginning chars, at least two more must agree
+    // and the agreeing characters must be more than half of the
+    // remaining characters.
+    if (minv > 4 && Num_com > i + 1 && 2 * Num_com >= minv + i) {
+      weight += (1 - weight) * ((Num_com - i - 1) / (a_len * b_len - i*2 + 2));
+    }
+  }
+
+  return weight
+  
+};
+
+// The char adjustment table used above
+
+
+
+
