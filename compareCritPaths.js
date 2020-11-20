@@ -52,6 +52,7 @@ jaro_winkler.adjustments = {
  filterTid = -1;                     //tid: -1 if not in use
  filterStatus = "none";                  //status: none if not in use
  saveLocation = "workspace://DataFiltering/output.txt";
+ simThreshold = 98;
 
 //The thread you want to compare
 var followName = "wget";

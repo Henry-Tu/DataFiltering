@@ -1,0 +1,252 @@
+Crit Path Output
+10
+Trace Number: 1
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 2
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 3
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 4
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 5
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget- A  wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 6
+String representation: 
+ wget-I wget-H wget-I wget- A  wget-H wget-I wget- A  wget-H wget-I wget- A  wget-H wget-I wget- A  wget-H wget-I wget- A  wget-H wget-I wget- A  wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget- A  wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 7
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 8
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 9
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace Number: 10
+String representation: 
+ wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-G wget-H wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I wget-I
+
+
+Trace 1 and Trace 2
+Cosine Algorithm: 99.86% similar
+Jaro Winkler: 90.23%
+Levenshtein distance: 256
+Trace 1 and Trace 3
+Cosine Algorithm: 99.63% similar
+Jaro Winkler: 85.37%
+Levenshtein distance: 777
+Trace 1 and Trace 4
+Cosine Algorithm: 99.30% similar
+Jaro Winkler: 86.66%
+Levenshtein distance: 658
+Trace 1 and Trace 5
+Cosine Algorithm: 99.55% similar
+Jaro Winkler: 86.74%
+Levenshtein distance: 737
+Trace 1 and Trace 6
+Cosine Algorithm: 98.99% similar
+Jaro Winkler: 89.50%
+Levenshtein distance: 1050
+Trace 1 and Trace 7
+Cosine Algorithm: 99.21% similar
+Jaro Winkler: 85.93%
+Levenshtein distance: 553
+Trace 1 and Trace 8
+Cosine Algorithm: 98.97% similar
+Jaro Winkler: 85.29%
+Levenshtein distance: 833
+Trace 1 and Trace 9
+Cosine Algorithm: 99.72% similar
+Jaro Winkler: 91.14%
+Levenshtein distance: 109
+Trace 1 and Trace 10
+Cosine Algorithm: 99.79% similar
+Jaro Winkler: 88.15%
+Levenshtein distance: 413
+
+Trace 2 and Trace 3
+Cosine Algorithm: 99.02% similar
+Jaro Winkler: 88.90%
+Levenshtein distance: 525
+Trace 2 and Trace 4
+Cosine Algorithm: 98.53% similar
+Jaro Winkler: 88.53%
+Levenshtein distance: 406
+Trace 2 and Trace 5
+Cosine Algorithm: 98.90% similar
+Jaro Winkler: 89.04%
+Levenshtein distance: 485
+Trace 2 and Trace 6
+Cosine Algorithm: 98.19% similar
+Jaro Winkler: 91.01%
+Levenshtein distance: 798
+Trace 2 and Trace 7
+Cosine Algorithm: 98.39% similar
+Jaro Winkler: 88.75%
+Levenshtein distance: 307
+Trace 2 and Trace 8
+Cosine Algorithm: 98.06% similar
+Jaro Winkler: 88.64%
+Levenshtein distance: 581
+Trace 2 and Trace 9
+Cosine Algorithm: 99.18% similar
+Jaro Winkler: 91.46%
+Levenshtein distance: 151
+Trace 2 and Trace 10
+Cosine Algorithm: 99.30% similar
+Jaro Winkler: 91.66%
+Levenshtein distance: 169
+
+Trace 3 and Trace 4
+Cosine Algorithm: 99.95% similar
+Jaro Winkler: 91.94%
+Levenshtein distance: 127
+Trace 3 and Trace 5
+Cosine Algorithm: 99.99% similar
+Jaro Winkler: 93.38%
+Levenshtein distance: 69
+Trace 3 and Trace 6
+Cosine Algorithm: 99.63% similar
+Jaro Winkler: 93.79%
+Levenshtein distance: 282
+Trace 3 and Trace 7
+Cosine Algorithm: 99.92% similar
+Jaro Winkler: 90.05%
+Levenshtein distance: 224
+Trace 3 and Trace 8
+Cosine Algorithm: 99.83% similar
+Jaro Winkler: 92.93%
+Levenshtein distance: 67
+Trace 3 and Trace 9
+Cosine Algorithm: 99.99% similar
+Jaro Winkler: 85.40%
+Levenshtein distance: 672
+Trace 3 and Trace 10
+Cosine Algorithm: 99.98% similar
+Jaro Winkler: 89.61%
+Levenshtein distance: 364
+
+Trace 4 and Trace 5
+Cosine Algorithm: 99.96% similar
+Jaro Winkler: 92.88%
+Levenshtein distance: 88
+Trace 4 and Trace 6
+Cosine Algorithm: 99.69% similar
+Jaro Winkler: 92.77%
+Levenshtein distance: 392
+Trace 4 and Trace 7
+Cosine Algorithm: 100.00% similar
+Jaro Winkler: 91.20%
+Levenshtein distance: 109
+Trace 4 and Trace 8
+Cosine Algorithm: 99.97% similar
+Jaro Winkler: 91.10%
+Levenshtein distance: 175
+Trace 4 and Trace 9
+Cosine Algorithm: 99.90% similar
+Jaro Winkler: 86.32%
+Levenshtein distance: 553
+Trace 4 and Trace 10
+Cosine Algorithm: 99.86% similar
+Jaro Winkler: 90.23%
+Levenshtein distance: 245
+
+Trace 5 and Trace 6
+Cosine Algorithm: 99.75% similar
+Jaro Winkler: 89.80%
+Levenshtein distance: 320
+Trace 5 and Trace 7
+Cosine Algorithm: 99.94% similar
+Jaro Winkler: 91.40%
+Levenshtein distance: 188
+Trace 5 and Trace 8
+Cosine Algorithm: 99.87% similar
+Jaro Winkler: 91.37%
+Levenshtein distance: 102
+Trace 5 and Trace 9
+Cosine Algorithm: 99.97% similar
+Jaro Winkler: 85.91%
+Levenshtein distance: 632
+Trace 5 and Trace 10
+Cosine Algorithm: 99.95% similar
+Jaro Winkler: 90.67%
+Levenshtein distance: 324
+
+Trace 6 and Trace 7
+Cosine Algorithm: 99.69% similar
+Jaro Winkler: 86.50%
+Levenshtein distance: 497
+Trace 6 and Trace 8
+Cosine Algorithm: 99.66% similar
+Jaro Winkler: 89.89%
+Levenshtein distance: 221
+Trace 6 and Trace 9
+Cosine Algorithm: 99.60% similar
+Jaro Winkler: 83.18%
+Levenshtein distance: 945
+Trace 6 and Trace 10
+Cosine Algorithm: 99.54% similar
+Jaro Winkler: 86.67%
+Levenshtein distance: 637
+
+Trace 7 and Trace 8
+Cosine Algorithm: 99.98% similar
+Jaro Winkler: 89.67%
+Levenshtein distance: 280
+Trace 7 and Trace 9
+Cosine Algorithm: 99.87% similar
+Jaro Winkler: 88.60%
+Levenshtein distance: 448
+Trace 7 and Trace 10
+Cosine Algorithm: 99.81% similar
+Jaro Winkler: 90.62%
+Levenshtein distance: 144
+
+Trace 8 and Trace 9
+Cosine Algorithm: 99.76% similar
+Jaro Winkler: 85.18%
+Levenshtein distance: 728
+Trace 8 and Trace 10
+Cosine Algorithm: 99.69% similar
+Jaro Winkler: 89.23%
+Levenshtein distance: 420
+
+Trace 9 and Trace 10
+Cosine Algorithm: 100.00% similar
+Jaro Winkler: 88.56%
+Levenshtein distance: 308
+
+
+Traces similar to trace 1:  trace 2 trace 3 trace 4 trace 5 trace 7 trace 9 trace 10
+Traces similar to trace 2:  trace 1 trace 3 trace 9 trace 10
+Traces similar to trace 3:  trace 1 trace 2 trace 4 trace 5 trace 6 trace 7 trace 8 trace 9 trace 10
+Traces similar to trace 4:  trace 1 trace 3 trace 5 trace 6 trace 7 trace 8 trace 9 trace 10
+Traces similar to trace 5:  trace 1 trace 3 trace 4 trace 6 trace 7 trace 8 trace 9 trace 10
+Traces similar to trace 6:  trace 3 trace 4 trace 5 trace 7 trace 8 trace 9 trace 10
+Traces similar to trace 7:  trace 1 trace 3 trace 4 trace 5 trace 6 trace 8 trace 9 trace 10
+Traces similar to trace 8:  trace 3 trace 4 trace 5 trace 6 trace 7 trace 9 trace 10
+Traces similar to trace 9:  trace 1 trace 2 trace 3 trace 4 trace 5 trace 6 trace 7 trace 8 trace 10
+Traces similar to trace 10:  trace 1 trace 2 trace 3 trace 4 trace 5 trace 6 trace 7 trace 8 trace 9

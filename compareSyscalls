@@ -1,0 +1,21 @@
+#!/bin/bash
+# 
+
+scriptPath="/home/henry/.tracecompass/Tracing/compareSyscallsCLI.js"
+script="Traces/compareCritPaths.js"
+path1=" /home/henry/lttng-traces/wget"
+path2="/kernel"
+path=""
+
+
+for i in {1..10}
+do
+
+   path=${path}$path1$i$path2
+   
+done
+
+
+./tracecompass --cli --open $path --script $scriptPath
+
+
