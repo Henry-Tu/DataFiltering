@@ -42,8 +42,8 @@ for details
 
 // For output
 var file = createFile(saveLocation);
-var fileHandle = writeLine(file, "Crit Path Output");
-writeLine(fileHandle,"");
+var fileHandle = writeLine(file, numTraces);
+writeLine(fileHandle,"Crit Path Output");
 var outputStrs = [];
 outputStrs[0] = "";
 var charOutput = "";
