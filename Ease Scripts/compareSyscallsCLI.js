@@ -10,14 +10,18 @@ const saveLocation = "workspace://DataFiltering/syscalls.txt";
 var file = createFile(saveLocation);
 var fileHandle = writeLine(file, "Syscall Output");
 var followName = "wget";
-var numTraces = 5;
-
+var numTraces = 10;
 
 print("start");
 for( traceNum = 1; traceNum <= numTraces; traceNum++){ 
-	location = "wget" + traceNum + "/kernel";
+	//set location of next trace
+	if(traceNum == 1){
+		location = "kernel";
+	}else{
+		location = "kernel(" + (traceNum) +")" ;
+	}
 	print("opening trace " + traceNum);
-	trace = openTrace("DataFiltering", location, false);
+	trace = openTrace("Tracing", location, false);
  	if (trace == null) {
       print("Trace is null");
 	} else{
@@ -31,7 +35,6 @@ function getSyscalls(trace){
 	events =  getEventIterator(trace);
 	
 	data = "";
-	
 	
 	// Get Critical Path
 	
@@ -153,7 +156,7 @@ function getSyscalls(trace){
 									eventTid = field.toString().substr(13);
 									if(eventTid == tid){
 										//if the tid matches, output the content of the syscall
-										writeLine(fileHandle,"Thread: " + name + " Syscall: " + event.getName().substr(8) + " " + event.getContent());
+										writeLine(fileHandle,"Time: " + eventTime + "CPU id: " + event.getCPU() + "Thread: " + name + " Syscall: " + event.getName().substr(8) + " " + event.getContent());
 									}
 								}
 							}
