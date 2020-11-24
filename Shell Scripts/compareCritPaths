@@ -1,0 +1,22 @@
+#!/bin/bash
+# Shell script that will import traces into Trace Compass and output their critical paths in a string format for comparison
+
+tracecompassPath="/home/henry/trace-compass"
+scriptPath="/home/henry/.tracecompass/DataFiltering/EaseScripts/compareCritPathsCLI.js"
+path1="/home/henry/.tracecompass/DataFiltering/SampleTraces/wget"
+path2="/kernel "
+path=""
+
+numTraces=10
+
+for i in {1..$numTraces}
+do
+
+   path=${path}$path1$i$path2
+   
+done
+
+cd $tracecompassPath
+./tracecompass --cli --open $path --script $scriptPath
+
+
