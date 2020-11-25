@@ -6,16 +6,14 @@ scriptPath="/home/henry/.tracecompass/DataFiltering/EaseScripts/compareCritPaths
 path1="/home/henry/.tracecompass/DataFiltering/SampleTraces/wget"
 path2="/kernel "
 path=""
+space=" "
 
 numTraces=10
 
-for i in {1..$numTraces}
-do
-
-   path=${path}$path1$i$path2
-   
+for ((i=1; i<=numTraces; i++)); do
+   	path=${path}${path1}${i}${path2}${space}
 done
-
+echo $path
 cd $tracecompassPath
 ./tracecompass --cli --open $path --script $scriptPath
 

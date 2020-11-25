@@ -9,9 +9,7 @@ path=""
 
 numTraces=10
 
-for i in {1..$numTraces}
-do
-
+for ((i=1; i<=numTraces; i++)); do
    path=${path}$path1$i$path2
  
 done
