@@ -9,7 +9,7 @@ const syscallPath= "workspace://DataFiltering/syscalls";
 const critPathPath = "workspace://DataFiltering/critPaths";
 const vectorPath= "workspace://DataFiltering/vectors";
 var followName = "wget";
-var numTraces = 100;
+var numTraces = 200;
 
 print("start");
 var d = new Date();
@@ -18,10 +18,19 @@ var syscallOut = createFile(syscallPath + t + ".txt");
 var syscallHandle = writeLine(syscallOut, "Syscall Output");
 var critPathOut = createFile(critPathPath + t + ".txt");
 var critPathHandle = writeLine(critPathOut, "Syscall Output");
-var freqVectorOut = createFile(vectorPath +"Freq" + t +".txt");
+var freqVectorOut = createFile(vectorPath +"Freq" + t +".csv");
 var freqVectorHandle = writeLine(freqVectorOut, "Vector Output");
-var durVectorOut = createFile(vectorPath +"Dur" + t+ ".txt");
-var durVectorHandle = writeLine(durVectorOut, "Vector Output");
+var durVectorOut = createFile(vectorPath +"Dur" + t+ ".csv");
+
+
+//Vector csv headers
+header = "";
+for(i=0;i<313;i++){
+	header+=i+",";
+}
+header+=313;
+var freqVectorHandle = writeLine(freqVectorOut, header);
+var durVectorHandle = writeLine(durVectorOut, header);
 
 for( traceNum = 1; traceNum <= numTraces; traceNum++){ 
 	//set location of next trace
