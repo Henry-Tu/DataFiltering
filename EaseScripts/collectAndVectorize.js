@@ -9,7 +9,7 @@ const syscallPath= "workspace://DataFiltering/syscalls";
 const critPathPath = "workspace://DataFiltering/critPaths";
 const vectorPath= "workspace://DataFiltering/vectors";
 var followName = "wget";
-var numTraces = 200;
+var numTraces = 100;
 
 print("start");
 var d = new Date();
@@ -21,7 +21,7 @@ var critPathHandle = writeLine(critPathOut, "Syscall Output");
 var freqVectorOut = createFile(vectorPath +"Freq" + t +".csv");
 var freqVectorHandle = writeLine(freqVectorOut, "Vector Output");
 var durVectorOut = createFile(vectorPath +"Dur" + t+ ".csv");
-
+var statusVectorOut = createFile(vectorPath +"Status" + t+ ".csv");
 
 //Vector csv headers
 header = "";
@@ -31,6 +31,13 @@ for(i=0;i<313;i++){
 header+=313;
 var freqVectorHandle = writeLine(freqVectorOut, header);
 var durVectorHandle = writeLine(durVectorOut, header);
+header = "";
+for(i=0;i<13;i++){
+	header+=i+",";
+}
+header+=13
+var statusVectorHandle = writeLine(statusVectorOut, header);
+
 
 for( traceNum = 1; traceNum <= numTraces; traceNum++){ 
 	//set location of next trace
@@ -137,10 +144,14 @@ function getData(trace){
 	rawSyscalls = "";
 	freqVector = [];
 	durationVector = [];
+	statusVector = [];
 	//iniitialize vectors
 	for(x = 0; x < 315; x++){
 		freqVector[x]=0;
 		durationVector[x]=0;
+	}
+	for(x=0; x<15; x++){
+	statusVector[x] = 0;
 	}
 	
 	previous = null;
@@ -168,8 +179,12 @@ function getData(trace){
 			
 			//output critpath data
 			type = edge.getType();
-			critOutStr += name + "-" + getChar(type) + " ";
+			status = getChar(type);
+			critOutStr += name + "-" + status + " ";
 			
+			
+			//Add to critpath statuses
+			statusVector[status] ++;
 			
 			//output syscalls
 				notPass = true;
@@ -248,6 +263,7 @@ function getData(trace){
 	}
 	writeLine(freqVectorHandle, vectorToString(freqVector));
 	writeLine(durVectorHandle, vectorToString(durationVector));
+	writeLine(statusVectorHandle, vectorToString(statusVector));
 	
 	
 	critOutStr +="\n";
@@ -264,31 +280,31 @@ exit();
 function getChar(status){
 	
 	if(status == "BLOCK_DEVICE"){
-		return'A';
+		return 0;
 	}else if(status == "BLOCKED"){
-		return('B');
+		return 1;
 	}else if(status == "DEFAULT"){
-		return'C';
+		return 2;
 	}else if(status == "EPS"){
-		return'D';
+		return 3;
 	}else if(status == "INTERRUPTED"){
-		return'E';
+		return 4;
 	}else if(status == "IPI"){
-		return'F';
+		return 5;
 	}else if(status =="NETWORK"){
-		return'G';
+		return 6;
 	}else if(status == "PREEMPTED"){
-		return'H';
+		return 7;
 	}else if(status == "RUNNING"){
-		return'I';
+		return 8;
 	}else if(status == "TIMER"){
-		return'J';
+		return 9;
 	}else if(status == "UNKNOWN"){
-		return'K';
+		return 11;
 	}else if(status == "USER_INPUT"){
-		return'L';
+		return 12;
 	}else{
-		return'Z';
+		return 13;
 	}
 }
 
@@ -301,6 +317,7 @@ function vectorToString(vector){
 		output += vector[f] + ",";
 	}
 	output += vector[vector.length-1];
+	print(output);
 	return output;
 }
 
