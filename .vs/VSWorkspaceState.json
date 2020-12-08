@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Sample Output",
+    "\\lstm_sample_output",
     "\\Traces"
   ],
-  "SelectedNode": "\\pyTest.py",
+  "SelectedNode": "\\lstm_sample_output",
   "PreviewInSolutionExplorer": false
 }
