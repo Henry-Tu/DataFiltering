@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Sample Output",
+    "\\Traces"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\pyTest.py",
   "PreviewInSolutionExplorer": false
 }
